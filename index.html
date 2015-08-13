@@ -209,22 +209,32 @@
 			</li>
 <li><a href="#maintenance-mode">Maintenance Mode</a></li>
 </ul>
+
 <p><a name="installation"></a></p>
-<h2>インストール</h2>
-<h3>環境要件</h3>
-<p>四糸乃エンジンは、作業環境の影響を受けます。下の項目を参考にして、環境を構築してください。</p>
-<div class="content-list">
-<ul>
-<li>バージョン7以上のウィンドウズ環境</li>
-<li>OpenSSL PHP Extension</li>
-<li>PDO PHP Extension</li>
-<li>Mbstring PHP Extension</li>
-<li>Tokenizer PHP Extension</li>
-</ul>
-</div>
+	<h2>インストール</h2>
+	<h3>環境要件</h3>
+	<p>
+		四糸乃エンジンは、作業環境の影響を受けます。下の項目を参考にして、環境を構築してください。
+		（満たさなくても使用可能ですが、制約があります。）
+	</p>
+	
+	<div class="content-list">
+		<ul>
+			<li>バージョン7以上のウィンドウズ環境</li>
+			<li>OpenSSL PHP Extension</li>
+			<li>PDO PHP Extension</li>
+			<li>Mbstring PHP Extension</li>
+			<li>Tokenizer PHP Extension</li>
+		</ul>
+	</div>
+	
+	
 <p><a name="install-laravel"></a></p>
-<h3>Installing Laravel</h3>
-<p>Laravel utilizes <a href="http://getcomposer.org">Composer</a> to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.</p>
+	<h3>四糸乃インストール</h3>
+	<p>
+		四糸乃はNodeをベースにしており、拡張機能は、NPMを介して管理しています。
+		したがって、四糸乃をインストールする前に、まずNodeとNPMがインストールされます。
+	</p>
 <h4>Via Laravel Installer</h4>
 <p>First, download the Laravel installer using Composer:</p>
 <pre><code>composer global require "laravel/installer=~1.1"</code></pre>
