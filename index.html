@@ -235,10 +235,17 @@
 		四糸乃はNodeをベースにしており、拡張機能は、NPMを介して管理しています。
 		したがって、四糸乃をインストールする前に、まずNodeとNPMがインストールされます。
 	</p>
-<h4>Via Laravel Installer</h4>
-<p>First, download the Laravel installer using Composer:</p>
-<pre><code>composer global require "laravel/installer=~1.1"</code></pre>
-<p>Make sure to place the <code>~/.composer/vendor/bin</code> directory in your PATH so the <code>laravel</code> executable can be located by your system.</p>
+	
+	<h4>四糸乃インストーラを使用して: </h4>
+	<p>
+		まず、ブラウザで四糸乃のインストーラをダウンロード。:
+	</p>
+	<pre><code>wget http://teamsharp.github.io/master.zip</code></pre>
+	
+	<p>
+		ダウンロードが完了したら、解凍した後、install.batを実行してください。
+		このバッチファイルは、あなたの環境変数にNodeとNPMを自動的にインストールし、四糸乃をグローバルにアクセスできるように設定します。	
+	</p>
 <p>Once installed, the simple <code>laravel new</code> command will create a fresh Laravel installation in the directory you specify. For instance, <code>laravel new blog</code> will create a directory named <code>blog</code> containing a fresh Laravel installation with all of Laravel's dependencies already installed. This method of installation is much faster than installing via Composer:</p>
 <pre><code>laravel new blog</code></pre>
 <h4>Via Composer Create-Project</h4>
