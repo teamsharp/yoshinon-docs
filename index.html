@@ -1,1 +1,324 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>四糸乃エンジン</title>
 
+		<link rel="Stylesheet" href="assets/style.css" />
+	</head>
+	<body class="home language-javascript">
+		<span class="overlay"></span>
+		
+		<nav class="main">
+			<div class="container">
+				<a href="http://teamsharp.github.io/yoshinon/" class="brand">
+					<img src="http://www.devfile.cf/lo.png" height="30" alt="Laravel logo">
+					<span style="font-weight: 400 !important;">Yoshinon</span>
+				</a>
+
+				<div class="responsive-sidebar-nav">
+					<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+				</div>
+
+			
+				<ul class="main-nav">
+					<li class="nav-docs"><a href="http://teamsharp.github.io/yoshinon/docs">ドキュメント</a></li>
+
+					<li class="dropdown community-dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="nav-forge"><a href="https://forge.laravel.com">Forge</a></li>
+							<li class="nav-envoyer"><a href="https://envoyer.io">Envoyer</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown community-dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conference <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="http://laracon.us">Laracon US</a></li>
+							<li><a href="http://laracon.eu">Laracon EU</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown community-dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://github.com/laravel/laravel">GitHub</a></li>
+							<li class="divider"></li>
+							<li><a href="https://laracasts.com/discuss">Forums</a></li>
+							<li><a href="http://larachat.co">Slack</a></li>
+							<li class="divider"></li>
+							<li><a href="http://laravel.io">Laravel.io</a></li>
+							<li><a href="https://larajobs.com/?partner=5#/">Jobs</a></li>
+							<li><a href="https://laravel-news.com/">Newsletter</a></li>
+							<li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
+							<li><a href="https://twitter.com/laravelphp">Twitter</a></li>
+						</ul>
+					</li>
+			</ul>
+		</div>
+	</nav>
+
+	
+	<nav id="slide-menu" class="slide-menu" role="navigation">
+
+		<div class="brand">
+			<a href="/">
+				<img src="/assets/img/laravel-logo-white.png" height="50" alt="Laravel white logo">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li class="nav-docs"><a href="/docs">ドキュメント</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com">Laracasts</a></li>
+			<li class="nav-lumen"><a href="http://lumen.laravel.com">Lumen</a></li>
+			
+			<li class="dropdown community-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li class="nav-forge"><a href="https://forge.laravel.com">Forge</a></li>
+					<li class="nav-envoyer"><a href="https://envoyer.io">Envoyer</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown community-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conference <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="http://laracon.us">Laracon US</a></li>
+					<li><a href="http://laracon.eu">Laracon EU</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown community-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="https://github.com/laravel/laravel">GitHub</a></li>
+					<li class="divider"></li>
+					<li><a href="https://laracasts.com/discuss">Forums</a></li>
+					<li><a href="http://larachat.co">Slack</a></li>
+					<li class="divider"></li>
+					<li><a href="http://laravel.io">Laravel.io</a></li>
+					<li><a href="https://larajobs.com/?partner=5#/">Jobs</a></li>
+					<li><a href="https://laravel-news.com/">Newsletter</a></li>
+					<li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
+					<li><a href="https://twitter.com/laravelphp">Twitter</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="panel statement light">
+		<div class="content">
+			<h1>愛をしたいですか？</h1>
+			<p>アーティストのためのビジュアルノベルプラットフォーム</p>
+			<div class='browser-window'>
+				<div class='top-bar'>
+					<div class='circles'>
+						<div class="circle circle-red"></div>
+						<div class="circle circle-yellow"></div>
+						<div class="circle circle-green"></div>
+					</div>
+				</div>
+				<div class='window-content'>
+					<pre class="line-numbers"><code class="language-javascript">
+"use yoshinon";
+
+var cYoshinon = new Character("四糸乃", {
+	"color": "#3CAACF",
+	"decoration": "none"
+});
+
+public function start(){
+	cYoshinon.say("四糸乃は愛です。");
+	cYoshinon.voice(new Voice("Yoshinon/ai_desu.wav"));
+	
+	return true;
+}
+
+__init__();
+						</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#features" class="next-up">
+			作業が不便ですか？
+			<img src="http://www.laravel.com/assets/img/down-arrow.png">
+		</a>
+	</section>
+
+	<section class="panel features dark" id="features">
+		<h1>作業が不便ですか？</h1>
+		<p style="font-weight: 100 !important;">最高の<span style="font-weight: 300 !important;">IDE</span>と一緒に魅惑的な開発環境を体験してみてください。</p>
+		<div class="blocks stacked">
+			<div class="block odd">
+				<div class="text">
+					<h2>効率的でおなじみの文法</h2>
+					<p>
+						ECMAScript5を基本的に従う文法、複数の付加機能を加えました。
+						四糸乃エンジンでは、オブジェクト指向の要素をさらに強化し、データ型宣言を提供しています。
+					</p>
+				</div>
+				<div class="media">
+
+					<div class='browser-window'>
+						<div class='top-bar'>
+							<div class='circles'>
+								<div class="circle circle-red"></div>
+								<div class="circle circle-yellow"></div>
+								<div class="circle circle-green"></div>
+							</div>
+						</div>
+						<div class='window-content'>
+							<pre class="line-numbers"><code class="language-javascript">
+"use yoshinon";
+
+class Character implements YoshinonObject {
+	public function __constructor(chName, optObject){
+		chName = typeof chName !== "undefined" ? chName : "匿名";
+		if(typeof optObject !== "object") throw new Error("Type of optObject must be \"object\".");
+	}
+}
+							</code></pre>
+						</div>
+					</div>
+
+				</div>
+			</div><!-- /.block -->
+			<div class="block even">
+				<div class="text">
+					<h2>CLIベースの自動管理システム</h2>
+					<p>
+						GitやSVNを使用して、ストーリーを管理することができます。もちろん、バージョン管理ソリューションの利点であるロールバック機能と履歴にも対応しています。
+					</p>
+				</div>
+				<div class="media">
+					<div class="terminal-window">
+						<div class='top-bar'></div>
+						<div class='window-content'>
+							<div class="dark-code">
+							<pre><code class="language-bash">
+C:\Users\User> cd Yoshinon
+C:\Users\User\Yoshinon> yosgit story add :237 
+Story line :237 added successfully!
+
+C:\Users\User\Yoshinon> yosgit story checkout -b dxStory01
+Story branch "dxStory01" created successfully!
+Branch activation changed to "dxStory01".
+							</code></pre></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.block -->
+			<div class="block odd">
+				<div class="text">
+					<h2>分かりやすい変数と関数</h2>
+					<p>
+						キャラクターを生成するためにコアを確認する必要がありません。ただCharacterオブジェクトを生成するだけでノーベルで使用キャラクターを定義することができます。
+					</p>
+				</div>
+				<div class="media">
+					<div class='browser-window'>
+						<div class='top-bar'>
+							<div class='circles'>
+								<div class="circle circle-red"></div>
+								<div class="circle circle-yellow"></div>
+								<div class="circle circle-green"></div>
+							</div>
+						</div>
+						<div class='window-content'>
+							<pre class="line-numbers"><code class="language-javascript">
+var chExample = new Character("例人", {
+	"color": "#FF00FF",
+	"decoration": "underline"
+});
+
+chExample.say("愛しています、皆さん！");
+chExample.selection([
+	{ "title": "私もそうです！", "description": "私はあなたを愛しています。", "on": function(){} },
+	{ "title": "バカじゃないの？", "description": "吉野の精神が飛んだようです。", "on": function(){} }
+]);
+							</code></pre>
+						</div>
+					</div>
+				</div><!-- /.block -->
+			</div>
+		<a href="#ecosystem" class="next-up">
+			ビジュアルノベル生態系
+			<img src="http://www.laravel.com/assets/img/down-arrow.png">
+		</a>
+	</section>
+
+	<section class="panel ecosystem light" id="ecosystem">
+		<h1>ビジュアルノベル生態系</h1>
+		<p>
+			あなたのストーリーテリングのスキルを四糸乃の生態系で鍛えしてください。
+		</p>
+
+		<div class="tiles">
+			<div class="tile">
+				<h2><a href="/docs/homestead">シノ拡張マネージャー</a></h2>
+				<p>
+					シノ拡張管理者は、四糸乃エンジンに追加の機能を付与する一種のプラグイン管理ソリューションです。
+					NPMJSのプライベートストアを介して管理するようになり、無料と有料の二種類に分けています。
+				</p>
+			</div>
+			<div class="tile">
+				<h2><a href="https://laracasts.com">学習コミュニティ</a></h2>
+				<p>Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</p>
+			</div>
+			<div class="tile">
+				<h2>映像チュートリアル</h2>
+				<p>Laravel is amazing out of the box, but there's more to explore! Let <a href="/docs/billing">Cashier</a> make subscription billing painless, or use <a href="/docs/authentication#social-authentication">Socialite</a> to authenticate with Facebook, Twitter, and more.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="/docs">ドキュメント</a></li>
+<li class="nav-laracasts"><a href="https://laracasts.com">Laracasts</a></li>
+<li class="nav-lumen"><a href="http://lumen.laravel.com">Lumen</a></li>
+
+<li class="dropdown community-dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+	<ul class="dropdown-menu" role="menu">
+		<li class="nav-forge"><a href="https://forge.laravel.com">Forge</a></li>
+		<li class="nav-envoyer"><a href="https://envoyer.io">Envoyer</a></li>
+	</ul>
+</li>
+
+<li class="dropdown community-dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conference <span class="caret"></span></a>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="http://laracon.us">Laracon US</a></li>
+		<li><a href="http://laracon.eu">Laracon EU</a></li>
+	</ul>
+</li>
+
+<li class="dropdown community-dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="https://github.com/laravel/laravel">GitHub</a></li>
+		<li class="divider"></li>
+		<li><a href="https://laracasts.com/discuss">Forums</a></li>
+		<li><a href="http://larachat.co">Slack</a></li>
+		<li class="divider"></li>
+		<li><a href="http://laravel.io">Laravel.io</a></li>
+		<li><a href="https://larajobs.com/?partner=5#/">Jobs</a></li>
+		<li><a href="https://laravel-news.com/">Newsletter</a></li>
+		<li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
+		<li><a href="https://twitter.com/laravelphp">Twitter</a></li>
+	</ul>
+</li>
+		</ul>
+		<p>再配布のためにお問い合わせお願いいたします。</p>
+		<p class="less-significant"><a href="http://jackmcdade.com">本サイトは、Jack McDade様がデザインされました。</a></p>
+	</footer>
+
+	
+	<script src="assets/cvs.js"></script>
+	<script src="http://laravel.com/assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+</body>
+</html>
